@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html>
+<!-- Started 13th January 2023 -->
+<!-- This is a simple collection of a few of my favorite YouTube Channels -->
+<!-- It took about 3 days originally... and then I worked on little touches such as titles, hover colors, new icons, etc...-->
+<!-- Was inspired by "Super Simple Dev" from his HTML AND CSS full course -->
+<!-- Hope you like it! -->
+<!-- 
+    Updated 13th January 2023
+
+❤️🧡💛💚💙💜🤎🖤🤍❤️‍🔥❣️💕💞💓💗💖💘💝💟💌
+            STEPHEN ADENIJI
+❤️🧡💛💚💙💜🤎🖤🤍❤️‍🔥❣️💕💞💓💗💖💘💝💟💌 
+
+-->
+
+
+<head>
+    <title>YouTube Clone Dark 🌚</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/dark/general.css">
+    <link rel="stylesheet" href="styles/dark/header.css">
+    <link rel="stylesheet" href="styles/dark/video.css">
+    <link rel="stylesheet" href="styles/dark/sidebar.css">
+    <link rel="stylesheet" href="styles/dark/tags.css">
+
+    <!-- fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="styles/custom.css">
+    <!-- end -->
+
+    <link rel="shortcut icon" href="./icons/favicon_96x96.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./icons/favicon_144x144.png" type="image/x-icon"> -->
+</head>
+
+<body style="background-color: #0F0F0F;">
+    <header class="header">
+
+        <div class="left-section">
+            <img class="hamburger-menu" src="icons/dark/hamburger-menu.svg">
+            <a href="#"><img class="youtube-logo" src="icons/dark/YouTube-White-Full-Color-Logo.wine.svg"></a>
+        </div>
+
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="  Search">
+            <button class="search-button">
+                <img class="search-icon" src="icons/dark/search.svg">
+                <div class="tooltip">Search</div>
+            </button>
+            <!-- Put position absolute inside position relative -->
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="icons/dark/voice-search-icon.svg">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+
+        <div class="right-section">
+
+            <!-- create icon -->
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="icons/dark/upload.svg">
+                <div class="tooltip">Create</div>
+            </div>
+
+            <!-- youtube apps icon -->
+            <img class="youtube-apps-icon" title="Apps" src="icons/dark/youtube-apps.svg">
+            &nbsp;
+            <!-- notifications icon -->
+            <div class="notifications-icon-container">
+                <img class="notifications-icon" title="Notifications" src="icons/dark/notifications.svg">
+                <div class="notifications-count">6+</div>
+            </div>
+
+            &nbsp;
+
+            <!-- dark mode toggle -->
+            <div>
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <a href="index.html"><span class="ball" title="Light"></span></a>
+                </label>
+            </div>
+
+            <!-- end of toggle -->
+
+            &nbsp;
+
+            <!-- my channel profile picture -->
+            <a href="https://www.youtube.com/channel/UCZxH3EK1qpwmPKHQjPCyuDw">
+                <img class="current-user-picture" title="Stephen Adeniji" src="channel-pictures/Passsport.jpg">
+            </a>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-link" title="Home">
+            <img src="icons/dark/home.svg">
+            <div>Home</div>
+        </div>
+        <div class=" sidebar-link" title="Shorts">
+            <!-- <img src="icons/dark/explore.svg"> -->
+            <img src="icons/dark/youtube-shorts-icon.svg">
+            <div>Shorts</div>
+        </div>
+        <div class="sidebar-link" title="Subscriptions">
+            <img src="icons/dark/subscriptions.svg">
+            <div>Subscriptions</div>
+        </div>
+        <!-- <div class="sidebar-link">
+            <img src="icons/dark/originals.svg">
+            <div>Originals</div>
+        </div> -->
+
+        <!-- <div class="sidebar-link">
+            <img src="icons/dark/youtube-music.svg">
+            <div>YouTube Music</div>
+        </div> -->
+
+        <div class="sidebar-link" title="Library">
+            <img src="icons/dark/library.svg">
+            <div>Library</div>
+        </div>
+    </nav>
+
+    <!-- TAGS -->
+    <div class="tags">
+        <div class="tag-item">All</div>
+        <div class="tag-item" title="Gaming">Gaming</div>
+        <div class="tag-item" title="Comedy">Comedy</div>
+        <div class="tag-item" title="Live">Live</div>
+        <div class="tag-item" title="FIFA">FIFA</div>
+        <div class="tag-item" title="Highlights">Highlights</div>
+        <div class="tag-item" title="Driving">Driving</div>
+        <div class="tag-item" title="Music">Music</div>
+        <div class="tag-item" title="Bodybuilding">Bodybuilding</div>
+        <div class="tag-item" title="Recently uploaded">Recently uploaded</div>
+        <div class="tag-item" title="Watched">Watched</div>
+        <div class="tag-item" title="Sports">Sports</div>
+        <!-- <div class="tag-item">Superhero movies</div> -->
+        <div class="tag-item" title="Apple">Apple</div>
+        <div class="tag-item" title="😏">😏</div>
+
+    </div>
+
+    <!-- end of tags -->
+
+
+    <!-- VIDEO SECTION -->
+    <main>
+        <section class="video-grid">
+
+            <!-- MARQUES BROWNLEE -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=5NjFuS_24v8">
+                        <img class="thumbnail" src="thumbnails/smartphone awards.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">20:11</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- channel picture -->
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/user/marquesbrownlee" title="Marques Brownlee">
+                            <img class="profile-picture" src="channel-pictures/marques brownlee.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!--video title -->
+                        <a href="https://www.youtube.com/watch?v=5NjFuS_24v8" class="v-info"
+                            title="Smartphone Awards 2022!">
+                            <p class="video-title">
+                                Smartphone Awards 2022!
+                            </p>
+                        </a>
+                        <!-- channel author -->
+                        <a href="https://www.youtube.com/user/marquesbrownlee" title="Marques Brownlee">
+                            <p class="video-author">
+                                Marques Brownlee
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                            <!-- stats -->
+                        </a>
+                        <p class="video-stats">
+                            4.2M views <strong>&#183;</strong> 3 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MR WHOSE THE BOSS -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=aKAZkC4pWSU">
+                        <img class="thumbnail" src="thumbnails/mrwhose.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">7:51</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@Mrwhosetheboss" title="Mrwhosetheboss">
+                            <img class="profile-picture" src="channel-pictures/mrwhose the boss.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=aKAZkC4pWSU" class="v-info"
+                            title="The most High-Tech Camera on the Planet?">
+                            <p class="video-title">
+                                The most High-Tech Camera on the Planet?
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@Mrwhosetheboss" title="Mrwhosetheboss">
+                            <p class="video-author">
+                                Mrwhosetheboss
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            1.6M views &#183; 3 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FISAYO FOSODU -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=e6tIv3hkFNw">
+                        <img class="thumbnail" src="thumbnails/rodney.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">18:49</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@FisayoFosudo" title="Fisayo Fosodu">
+                            <img class="profile-picture" src="channel-pictures/fisayo fosodu.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=e6tIv3hkFNw" class="v-info"
+                            title="Meet The 20 Year Old Nigerian TikTok Millionaire!">
+                            <p class="video-title">
+                                Meet The 20 Year Old Nigerian TikTok Millionaire!
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@FisayoFosudo" title="Fisayo Fosodu">
+                            <p class="video-author">
+                                Fisayo Fosodu
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            273K views &#183; 1 month ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAZE RUG -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=3JF7nXOEodM&t=618s">
+                        <img class="thumbnail" src="thumbnails/i tested cheap.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">16:31</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@rug" title="FaZe Rug">
+                            <img class="profile-picture" src="channel-pictures/faze rug.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=3JF7nXOEodM&t=618s" class="v-info"
+                            title="I Tested Cheap VS Expensive Amazon Gadgets">
+                            <p class="video-title">
+                                I Tested Cheap VS Expensive Amazon Gadgets
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@rug" title="FaZe Rug">
+                            <p class="video-author">
+                                FaZe Rug
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            3.2M views &#183; 2 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ISAAC AND ANDREA -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=6UMd8nWRsoQ&t=163s">
+                        <img class="thumbnail" src="thumbnails/the worst way.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">8:43</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@IsaacandAndrea" title="Isaac & Andrea">
+                            <img class="profile-picture" src="channel-pictures/isac and andrea.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- title -->
+                        <a href="https://www.youtube.com/watch?v=6UMd8nWRsoQ&t=163s" class="v-info"
+                            title="The WORST start to the new year... *not doing well*">
+                            <p class="video-title">
+                                The WORST start to the new year... *not doing well*
+                            </p>
+                        </a>
+                        <a href="https://www.youtube.com/@IsaacandAndrea" title="Isaac & Andrea">
+                            <!-- author -->
+                            <p class="video-author">
+                                Isaac & Andrea
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            50K views &#183; 2 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TECH LEAD -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=Ap2uWsJV25w">
+                        <img class="thumbnail" src="thumbnails/10 years in the life.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">10:03</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@TechLead" title="TechLead">
+                            <img class="profile-picture" src="channel-pictures/tech lead.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=Ap2uWsJV25w" class="v-info"
+                            title="10 Years in the Life of a Software Engineer...">
+                            <p class="video-title">
+                                10 Years in the Life of a Software Engineer...
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@TechLead" title="TechLead">
+                            <p class="video-author">
+                                TechLead
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            2.7M views &#183; 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KRAKS TV -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=yN_9pCTz69U&t=1199s">
+                        <img class="thumbnail" src="thumbnails/shoot your shot with mr macaroni.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">51:44</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- channel picture -->
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@KraksHQ" title="KraksTV">
+                            <img class="profile-picture" src="channel-pictures/kraks tv.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=yN_9pCTz69U&t=1199s" class="v-info"
+                            title="Shoot your Shots Finale with Mr Macaroni (Daddy Wa)">
+                            <p class="video-title">
+                                Shoot your Shots Finale with Mr Macaroni (Daddy Wa)
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@KraksHQ" title="KraksTV">
+                            <p class="video-author">
+                                KraksTV
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            164K views &#183; 2 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JESSE JAMES WEST -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=bXPTFlf3sDQ">
+                        <img class="thumbnail" src="thumbnails/training with mountain.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">18:46</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@JesseJamesWest" title="Jesse James West">
+                            <img class="profile-picture" src="channel-pictures/jesse james west.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=bXPTFlf3sDQ" class="v-info"
+                            title="Training W/ 'The Mountain' From Game Of Thrones">
+                            <p class="video-title">
+                                Training W/ 'The Mountain' From Game Of Thrones
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@JesseJamesWest" title="Jesse James West">
+                            <p class="video-author">
+                                Jesse James West
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            8M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STOKES TWINS -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=7N70RcxxKsk&t=69s">
+                        <img class="thumbnail" src="thumbnails/trying 100 life hacks.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">22:48</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@StokesTwins" title="Stokes Twins">
+                            <img class="profile-picture" src="channel-pictures/stokes twins.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=7N70RcxxKsk&t=69s" class="v-info"
+                            title="TRYING 100 LIFE HACKS IN 24 HOURS">
+                            <p class="video-title">
+                                TRYING 100 LIFE HACKS IN 24 HOURS
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@StokesTwins" title="Stokes Twins">
+                            <p class="video-author">
+                                Stokes Twins
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            16M views &#183; 4 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MR BEAST -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=h5NvTTOlOtI">
+                        <img class="thumbnail" src="thumbnails/hydraulic press.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">10:25</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@MrBeast" title="MrBeast">
+                            <img class="profile-picture" src="channel-pictures/mr beast.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=h5NvTTOlOtI" class="v-info"
+                            title="Hydraulic Press Vs Lamborghini">
+                            <p class="video-title">
+                                Hydraulic Press Vs Lamborghini
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@MrBeast" title="MrBeast">
+                            <p class="video-author">
+                                MrBeast
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            90M views &#183; 1 month ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MR BEAST REACTS -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=I4bxOuhl8TE&t=18s">
+                        <img class="thumbnail" src="thumbnails/impossible moments.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">8:25</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@BeastReacts" title="Beast Reacts">
+                            <img class="profile-picture" src="channel-pictures/beast reacts.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=I4bxOuhl8TE&t=18s" class="v-info"
+                            title="Impossible Moments Caught On Camera">
+                            <p class="video-title">
+                                Impossible Moments Caught On Camera
+                            </p>
+                        </a>
+                        <a href="https://www.youtube.com/@BeastReacts" title="Beast Reacts">
+                            <!-- author -->
+                            <p class="video-author">
+                                Beast Reacts
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            9.6M views &#183; 1 month ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TWYSE EREME -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=x4jdWB2f5hA">
+                        <img class="thumbnail" src="thumbnails/wahala free.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">2:01</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@twyse_116" title="Twyse Ereme">
+                            <img class="profile-picture" src="channel-pictures/twyse.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=x4jdWB2f5hA" class="v-info"
+                            title="WAHALA-FREE CHRISTMAS 😁 | MANO">
+                            <p class="video-title">
+                                WAHALA-FREE CHRISTMAS 😁 | MANO
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@twyse_116" title="Twyse Ereme">
+                            <p class="video-author">
+                                Twyse Ereme
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            124K views &#183; 3 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MR MACARONI TV -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=X4G6q4aYlKg">
+                        <img class="thumbnail" src="thumbnails/happy new year.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">1:52</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@MrMacaroniTV" title="MRMACARONI TV">
+                            <img class="profile-picture" src="channel-pictures/mr macaroni tv.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=X4G6q4aYlKg" class="v-info"
+                            title="HAPPY NEW YEAR | MR MACARONI | MOTUNDE |...">
+                            <p class="video-title">
+                                HAPPY NEW YEAR | MR MACARONI | MOTUNDE |...
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@MrMacaroniTV" title="MRMACARONI TV">
+                            <p class="video-author">
+                                MRMACARONI TV
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            139K views &#183; 11 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MIND WAREHOUSE -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=vaLXMBMmXNM&t=19s">
+                        <img class="thumbnail" src="thumbnails/incredible sync.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">8:08</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@mind_warehouse" title="#Mind Warehouse">
+                            <img class="profile-picture" src="channel-pictures/mind warehouse.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=vaLXMBMmXNM&t=19s" class="v-info"
+                            title="Incredible Synchronicity That Looks Like a Glitch in the Matrix">
+                            <p class="video-title">
+                                Incredible Synchronicity That Looks Like a Glitch in the Matrix
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@mind_warehouse" title="#Mind Warehouse">
+                            <p class="video-author">
+                                #Mind Warehouse
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            6M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TREND CENTRAL -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=o5pThwWp8FA">
+                        <img class="thumbnail" src="thumbnails/instant karma.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@TrendCentral" title="Trend Central">
+                            <img class="profile-picture" src="channel-pictures/trend central.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=o5pThwWp8FA" class="v-info" title="Instant Karma...">
+                            <p class="video-title">
+                                Instant Karma...
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@TrendCentral" title="Trend Central">
+                            <p class="video-author">
+                                Trend Central
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            206K views &#183; 3 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOPIK -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=0TBSToQYbQ8">
+                        <img class="thumbnail" src="thumbnails/meet me around.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">7:08</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@T0PIK" title="TOPIK">
+                            <img class="profile-picture" src="channel-pictures/topik.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=0TBSToQYbQ8" class="v-info"
+                            title="Meet Me Around The Corner 😍">
+                            <p class="video-title">
+                                Meet Me Around The Corner 😍
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@T0PIK" title="TOPIK">
+                            <p class="video-author">
+                                TOPIK
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            16K views &#183; 4 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KICKFLIX -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=1QBaBCn7z0Q&t=63s">
+                        <img class="thumbnail" src="thumbnails/10 craziest saves.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">7:32</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@KickFlix" title="KickFlix">
+                            <img class="profile-picture" src="channel-pictures/kickflix.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=1QBaBCn7z0Q&t=63s" class="v-info"
+                            title="10 CRAZIEST Saves In Football History">
+                            <p class="video-title">
+                                10 CRAZIEST Saves In Football History
+                            </p>
+                        </a>
+                        <a href="https://www.youtube.com/@KickFlix" title="KickFlix">
+                            <!-- author -->
+                            <p class="video-author">
+                                KickFlix
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            3.1M views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THE DAILY DROPOUT -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=jZ01UP6JtKA">
+                        <img class="thumbnail" src="thumbnails/hitting on younger guys.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">9:28</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@TheDailyDropout" title="The Daily Dropout">
+                            <img class="profile-picture" src="channel-pictures/the daily dropout.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=jZ01UP6JtKA" class="v-info"
+                            title="Hitting On Younger Guys..">
+                            <p class="video-title">
+                                Hitting On Younger Guys..
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@TheDailyDropout" title="The Daily Dropout">
+                            <p class="video-author">
+                                The Daily Dropout
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            159K views &#183; 3 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROB -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=w2CB8yFv90k">
+                        <img class="thumbnail" src="thumbnails/if apple.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">8:04</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@r0b" title="rob">
+                            <img class="profile-picture" src="channel-pictures/rob.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=w2CB8yFv90k" class="v-info"
+                            title="if Apple was honest...">
+                            <p class="video-title">
+                                if Apple was honest...
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@r0b" title="rob">
+                            <p class="video-author">
+                                rob
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                            <!-- stats -->
+                        </a>
+                        <p class="video-stats">
+                            1.1M views &#183; 7 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MIND WAREHOUSE -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=dnUS2eWER1A">
+                        <img class="thumbnail" src="thumbnails/what they found.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">20:18</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@mind_warehouse" title="#Mind Warehouse">
+                            <img class="profile-picture" src="channel-pictures/mind warehouse.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=dnUS2eWER1A" class="v-info"
+                            title="What They Found in Ice Surprised Everyone">
+                            <p class="video-title">
+                                What They Found in Ice Surprised Everyone
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@mind_warehouse" title="#Mind Warehouse">
+                            <p class="video-author">
+                                #Mind Warehouse
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            191K views &#183; 2 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INFINITE COMPARISON -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=Uh1uJI1yUn0">
+                        <img class="thumbnail" src="thumbnails/handle breakup.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">3:02</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@InfiniteComparison" title="Infinite Comparison">
+                            <img class="profile-picture" src="channel-pictures/infinte comparison.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=Uh1uJI1yUn0" class="v-info"
+                            title="Probability Comparison: How Do People Take A Breakup?">
+                            <p class="video-title">
+                                Probability Comparison: How Do People Take A Breakup?
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@InfiniteComparison" title="Infinite Comparison">
+                            <p class="video-author">
+                                Infinite Comparison
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            24K views &#183; 2 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THE URBAN FIGHT -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=MhFya94mLDI">
+                        <img class="thumbnail" src="thumbnails/7 steps to get a job.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">11:48</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@TheUrbanFight" title="The Urban Fight">
+                            <img class="profile-picture" src="channel-pictures/the urban fight.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=MhFya94mLDI" class="v-info"
+                            title="7 Steps to Get a JOB after a Career Break (For Freshers + Experienced)">
+                            <p class="video-title">
+                                7 Steps to Get a JOB after a Career Break (For Freshers + Experienced)
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@TheUrbanFight" title="The Urban Fight">
+                            <p class="video-author">
+                                The Urban Fight
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            171K views &#183; 7 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAREER VIDZ -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=YC9nybx0b4o">
+                        <img class="thumbnail" src="thumbnails/top 11 best.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">10:29</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@CareerVidz" title="CareerVidz">
+                            <img class="profile-picture" src="channel-pictures/career vids.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=YC9nybx0b4o" class="v-info"
+                            title="TOP 11 BEST WORDS to USE on a CV or RESUME! (CV PERSONAL...">
+                            <p class="video-title">
+                                TOP 11 BEST WORDS to USE on a CV or RESUME! (CV PERSONAL...
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@CareerVidz" title="CareerVidz">
+                            <p class="video-author">
+                                CareerVidz
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            2.7K views &#183; 10 hours ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KABUSA ORIENTAL CHOIR -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=_i6OgMpOtQc">
+                        <img class="thumbnail" src="thumbnails/last last.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">2:58</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/channel/UC0iZZE9pfgF8w59PpWxlptg"
+                            title="Kabusa Oriental Choir">
+                            <img class="profile-picture" src="channel-pictures/kabusa.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=_i6OgMpOtQc" title="Last Last (Choir Version)">
+                            <p class="video-title">
+                                Last Last (Choir Version)
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/channel/UC0iZZE9pfgF8w59PpWxlptg" class="v-info"
+                            title="Kabusa Oriental Choir">
+                            <p class="video-author">
+                                Kabusa Oriental Choir
+                                <!-- supposed to be song verification -->
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            58K views &#183; 2 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROGRAMMING WITH MOSH -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=d56mG7DezGs">
+                        <img class="thumbnail" src="thumbnails/typescript tutorial.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">1:04:28</div>
+                </div>
+                <div class="video-info-grid">
+                    <!-- channel picture -->
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@programmingwithmosh" title="Programming With Mosh">
+                            <img class="profile-picture" src="channel-pictures/programming with mosh.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=d56mG7DezGs" class="v-info"
+                            title="TypeScript Tutorial for Beginners">
+                            <p class="video-title">
+                                TypeScript Tutorial for Beginners
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@programmingwithmosh" title="Programming With Mosh">
+                            <p class="video-author">
+                                Programming With Mosh
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            412K views &#183; 7 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THE INFOGRAPHICS SHOW -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=l8mEDpGdgLQ">
+                        <img class="thumbnail" src="thumbnails/why putin is scared.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">10:51</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@TheInfographicsShow" title="The Infographics Show">
+                            <img class="profile-picture" src="channel-pictures/the infographics show.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=l8mEDpGdgLQ" class="v-info"
+                            title="Why Putin is Scared of US Patriot Missiles in Ukraine">
+                            <p class="video-title">
+                                Why Putin is Scared of US Patriot Missiles in Ukraine
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@TheInfographicsShow" title="The Infographics Show">
+                            <p class="video-author">
+                                The Infographics Show
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            385K views &#183; 1 day ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT NIGHTFALL -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=X4RDS7mbnZ4">
+                        <img class="thumbnail" src="thumbnails/mrbeast vs.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">8:49</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@ProjectNightfall" title="Project Nightfall">
+                            <img class="profile-picture" src="channel-pictures/project nightfall.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=X4RDS7mbnZ4" class="v-info"
+                            title="MrBeast vs My Vegan Teacher">
+                            <p class="video-title">
+                                MrBeast vs My Vegan Teacher
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@ProjectNightfall" title="Project Nightfall">
+                            <p class="video-author">
+                                Project Nightfall
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            123K views &#183; 2 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GOAL 90 -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=iAciuCVnQkc&t=4s">
+                        <img class="thumbnail" src="thumbnails/10 annoying habits.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">8:33</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@Goal_90" title="Goal 90">
+                            <img class="profile-picture" src="channel-pictures/goal 90.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=iAciuCVnQkc&t=4s" class="v-info"
+                            title="10 Annoying Habits Footballers Have That Will...">
+                            <p class="video-title">
+                                10 Annoying Habits Footballers Have That Will...
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@Goal_90" title="Goal 90">
+                            <p class="video-author">
+                                Goal 90
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            55K views &#183; 18 hours ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THE REACT SHOW -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=EOoD2tkUPq4">
+                        <img class="thumbnail" src="thumbnails/iphone 13 pro.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">1:01</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@Hash1531" title="TheReactShow">
+                            <img class="profile-picture" src="channel-pictures/the react show.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=EOoD2tkUPq4" class="v-info"
+                            title="iPhone 13 Pro Specifications">
+                            <p class="video-title">
+                                iPhone 13 Pro Specifications
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@Hash1531" title="TheReactShow">
+                            <p class="video-author">
+                                TheReactShow
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            4.8K views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLEVER PROGRAMMER -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=B9nFMZIYQl0">
+                        <img class="thumbnail" src="thumbnails/python tutorial.jpg">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">11:00:09</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@CleverProgrammer" title="Clever Programmer">
+                            <img class="profile-picture" src="channel-pictures/clever programmer.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=B9nFMZIYQl0" class="v-info"
+                            title="Python Tutorial for Beginners - Full Course in 11 Hours (2022)">
+                            <p class="video-title">
+                                Python Tutorial for Beginners - Full Course in 11 Hours (2022)
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@CleverProgrammer" title="Clever Programmer">
+                            <p class="video-author">
+                                Clever Programmer
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            2.3M views &#183; 3 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CS DOJO -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                        <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">11:17</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@CSDojo" title="CS Dojo">
+                            <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" class="v-info"
+                            title="Kadane's Algorithm to Maximum Sum Subarray Problem">
+                            <p class="video-title">
+                                Kadane's Algorithm to Maximum Sum Subarray Problem
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@CSDojo" title="CS Dojo">
+                            <p class="video-author">
+                                CS Dojo
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            616K views &#183; 6 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MR BEAST -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                        <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+                    </a>
+                    <!-- duration -->
+                    <div class="video-time">20:00</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <a href="https://www.youtube.com/@MrBeast" title="MrBeast">
+                            <img class="profile-picture" src="channel-pictures/mr beast.jpg">
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" class="v-info"
+                            title="Anything You Can Fit In The Circle I’ll Pay For">
+                            <p class="video-title">
+                                Anything You Can Fit In The Circle I’ll Pay For
+                            </p>
+                        </a>
+                        <!-- author -->
+                        <a href="https://www.youtube.com/@MrBeast" title="MrBeast">
+                            <p class="video-author">
+                                MrBeast
+                                <img src="/icons/check-mark.png" alt="verified" class="verified">
+                            </p>
+                        </a>
+                        <!-- stats -->
+                        <p class="video-stats">
+                            198M views &#183; 2 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMPTY -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <img class="thumbnail empty" src="thumbnails/empty.png">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <img class="profile-picture empty-pic" src="channel-pictures/empty.png">
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <p class="video-title empty-line-1"> </p>
+                        <!-- author -->
+                        <p class="video-author empty-line-2"> </p>
+                        <!-- stats -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMPTY -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <img class="thumbnail empty" src="thumbnails/empty.png">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <img class="profile-picture empty-pic" src="channel-pictures/empty.png">
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <p class="video-title empty-line-1"> </p>
+                        <!-- author -->
+                        <p class="video-author empty-line-2"> </p>
+                        <!-- stats -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMPTY -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <img class="thumbnail empty" src="thumbnails/empty.png">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <img class="profile-picture empty-pic" src="channel-pictures/empty.png">
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <p class="video-title empty-line-1"> </p>
+                        <!-- author -->
+                        <p class="video-author empty-line-2"> </p>
+                        <!-- stats -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMPTY -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <!-- thumbnail -->
+                    <img class="thumbnail empty" src="thumbnails/empty.png">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <!-- channel picture -->
+                        <img class="profile-picture empty-pic" src="channel-pictures/empty.png">
+                    </div>
+                    <div class="video-info">
+                        <!-- video title -->
+                        <p class="video-title empty-line-1"> </p>
+                        <!-- author -->
+                        <p class="video-author empty-line-2"> </p>
+                        <!-- stats -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <br>
+
+    </main>
+
+    <!-- load more button -->
+    <button class="btn btn-primary" data-load-more>
+        <span class="spiner"></span>
+
+        <span>Load More</span>
+    </button>
+    <!-- end of button -->
+
+
+    <!-- custom js link -->
+    <script src="js/custom.js"></script>
+    <!-- end -->
+    <br>
+</body>
+
+</html>
