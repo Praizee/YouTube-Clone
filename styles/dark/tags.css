@@ -1,0 +1,28 @@
+.tags {
+    color: white;
+    display: inline;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tag-item {
+    padding: 5px 8px 5px 8px;
+    display: inline-block;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    margin-left: 8px;
+    background-color: rgb(204, 200, 200, 0.1);
+}
+
+.tag-item:hover {
+    background-color: rgba(224, 221, 221, 0.3);
+}
+
+.tag-item:first-child:hover {
+    background-color: #FFFFFF;
+}
+
+.tag-item:first-child {
+    background-color: #e0dcdc;
+    color: black;
+}

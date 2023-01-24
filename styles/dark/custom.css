@@ -1,0 +1,243 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+    /**
+     * colors
+     */
+
+    --imperial-red_12: hsla(357, 86%, 57%, 0.12);
+    --pacific-blue_12: hsla(188, 78%, 41%, 0.12);
+    --davys-gray_12: hsla(210, 9%, 31%, 0.12);
+    --imperial-red: hsl(357, 86%, 57%);
+    --sonic-sliver: hsl(0, 0%, 47%);
+    --pacific-blue: hsl(188, 78%, 41%);
+    --blue-ryb_12: hsla(220, 100%, 50%, 0.12);
+    --space-cadet: hsl(220, 41%, 20%);
+    --eerie-black: hsl(214, 10%, 13%);
+    --davys-gray: hsl(210, 9%, 31%);
+    --emerald_12: hsla(144, 62%, 53%, 0.12);
+    --cool-gray: hsl(225, 11%, 59%);
+    --cultured: hsl(225, 20%, 96%);
+    --blue-ryb: hsl(220, 100%, 50%);
+    --black_08: hsla(0, 0%, 0%, 0.06);
+    --black_12: hsla(0, 0%, 0%, 0.12);
+    --coral_12: hsla(15, 100%, 65%, 0.12);
+    --sunglow: hsl(44, 100%, 61%);
+    --emerald: hsl(144, 62%, 53%);
+    --onyx-2: hsl(210, 10%, 23%);
+    --coral: hsl(15, 100%, 65%);
+    --white: hsl(0, 0%, 100%);
+    --onyx: hsl(207, 8%, 21%);
+
+    /**
+     * typography
+     */
+
+    --ff-vietnam: "Be Vietnam Pro", sans-serif;
+
+    --fs-1: 1.563rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1.25rem;
+    --fs-4: 1.078rem;
+    --fs-5: 1rem;
+    --fs-6: 0.938rem;
+    --fs-7: 0.875rem;
+    --fs-8: 0.844rem;
+    --fs-9: 0.813rem;
+    --fs-10: 0.769rem;
+
+    --fw-500: 500;
+    --fw-600: 600;
+
+    /**
+     * transition
+     */
+
+    --transition: 0.25s ease;
+    --cubic-out: cubic-bezier(0.45, 0.85, 0.5, 1);
+    --cubic-in: cubic-bezier(0.5, 0, 0.50, 0.95);
+
+    /**
+     * radius
+     */
+
+    --radius-6: 6px;
+
+    /**
+     * shadow
+     */
+
+    --shadow-1: 0 12px 20px hsla(210, 10%, 23%, 0.07);
+    --shadow-2: 0 2px 10px hsla(0, 0%, 0%, 0.04);
+    --shadow-3: 0 2px 20px var(--black_08);
+
+}
+
+
+
+
+
+/*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+img,
+span,
+data,
+time,
+input,
+button,
+span.icon {
+    display: block;
+}
+
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* html {
+    font-family: var(--ff-vietnam);
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-block-start: 72px;
+    /* background: var(--cultured); */
+/* } */
+
+*/:focus-visible {
+    outline: 2px solid var(--onyx);
+    outline-offset: 1px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 95%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%);
+}
+
+
+
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--fs-9);
+    font-weight: var(--fw-600);
+    padding: 8px 16px;
+    border-radius: var(--radius-6);
+}
+
+.btn .icon {
+    font-size: 16px;
+    font-variation-settings: 'wght' 400;
+}
+
+.btn-link {
+    /* color: var(--blue-ryb); */
+    color: #E62E2D;
+}
+
+.btn-link:is(:hover, :focus) {
+    /* background: var(--blue-ryb_12); */
+    background: #E62E2D;
+}
+
+.btn-primary {
+    /* color: var(--blue-ryb); */
+    /* border: 1px solid var(--blue-ryb); */
+    color: #E62E2D;
+    border: 1px solid #E62E2D;
+    transition: var(--transition);
+}
+
+.btn-primary:is(:hover, :focus) {
+    /* background: var(--blue-ryb); */
+    background: #E62E2D;
+    color: var(--white);
+    /* box-shadow: 0 10px 10px -8px var(--blue-ryb); */
+    box-shadow: 0 10px 10px -8px #E62E2D;
+}
+
+
+/*-----------------------------------*\
+    #TASKS
+  \*-----------------------------------*/
+
+.btn-primary {
+    margin-block: 25px;
+    margin-inline: auto;
+}
+
+.btn-primary .spiner {
+    padding: 6px;
+    /* border: 2px solid var(--blue-ryb); */
+    border: 2px solid #E62E2D;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: rotate 0.75s linear infinite;
+    display: none;
+}
+
+.btn-primary:is(:hover, :focus) .spiner {
+    border-color: var(--white);
+    border-top-color: transparent;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.btn-primary.active .spiner {
+    display: block;
+}
