@@ -11,7 +11,7 @@ loadMoreBtn.addEventListener("click", function () {
 // end of btn loading spin toggle
 
 
-// alert("Desktop only!✅  No mobiles allowed!🚫")
+alert("Desktop only!✅  No mobiles allowed!🚫")
 // ❌🛑🆗
 
 
