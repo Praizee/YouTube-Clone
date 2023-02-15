@@ -14,7 +14,7 @@ loadMoreBtn.addEventListener("click", function () {
 alert("Desktop only!✅  No mobiles allowed!🚫")
 // ❌🛑🆗
 
-
+alert("Click on the white ball in the navbar to toggle light/dark mode")
 
 
 // dark mode toggle
